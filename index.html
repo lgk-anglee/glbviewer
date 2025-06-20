@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualizzatore 3D</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    model-viewer {
+      width: 90%;
+      height: 90%;
+      max-width: 1800px;
+      max-height: 1200px;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer
+    src="cole-sideboard.glb"
+    alt="Modello 3D di un mobile"
+    camera-controls
+    auto-rotate
+    background-color="#2c2c2c"
+    shadow-intensity="1"
+    exposure="1"
+    autoplay>
+  </model-viewer>
+</body>
+</html>
